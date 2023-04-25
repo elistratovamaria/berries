@@ -1,1 +1,18 @@
-/* здесь подключите шрифты*/
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/raleway/raleway-regular.woff2"),
+    url("../fonts/raleway/raleway-regular.woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Comfortaa";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/comfortaa/comfortaa-regular.woff2"),
+    url("../fonts/comfortaa/comfortaa-regular.woff");
+  font-display: swap;
+}
+
