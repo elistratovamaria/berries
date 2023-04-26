@@ -1,5 +1,7 @@
+@use "../global/variables.scss" as var;
+
 .header {
-  background-color: #663399;
-  color: #ffffff;
+  background-color: var.$light-coral;
+  color: var.$black;
   padding: 10px 15px;
 }

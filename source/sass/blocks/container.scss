@@ -1,0 +1,12 @@
+@use "../global/variable" as var;
+
+.container {
+  width: 100%;
+  max-width: 1128px;
+  padding: 0 26px;
+  margin: 0 auto;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 0 94px;
+  }
+}
