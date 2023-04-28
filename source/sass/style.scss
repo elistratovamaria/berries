@@ -1,9 +1,11 @@
 /* GLOBAL */
-@use "global/variables";
-@use "global/global";
-@use "global/fonts";
+@use "global/global.scss";
+@use "global/fonts.scss";
 
 /* BLOCKS */
-@use "blocks/page";
-@use "blocks/page-body";
-@use "blocks/header";
+@use "blocks/page.scss";
+@use "blocks/page-body.scss";
+@use "blocks/container.scss";
+@use "blocks/main-header.scss";
+@use "blocks/main-nav.scss";
+@use "blocks/main-footer.scss";

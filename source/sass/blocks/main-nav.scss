@@ -1,0 +1,34 @@
+@use "../global/variables.scss" as var;
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+
+  @media (max-width: var.$mobile-width-only) {
+    min-height: 360px;
+    padding: 32px 40px;
+    flex-direction: column;
+  }
+
+  @media (min-width: var.$tablet-width) {
+    display: grid;
+    flex-wrap: unset;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    max-width: 612px;
+    gap: 28px;
+  }
+}
+
+.main-nav__link {
+  font-size: 20px;
+  line-height: 23px;
+  color: var.$black;
+}

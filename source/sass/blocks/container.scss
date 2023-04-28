@@ -1,4 +1,4 @@
-@use "../global/variable" as var;
+@use "../global/variables.scss" as var;
 
 .container {
   width: 100%;
@@ -6,7 +6,7 @@
   padding: 0 26px;
   margin: 0 auto;
 
-  @media (min-width: var.$tablet-width) {
-    padding: 0 94px;
+  @media (min-width: var.$desktop-width) {
+    padding: 0;
   }
 }

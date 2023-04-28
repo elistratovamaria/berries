@@ -1,0 +1,7 @@
+@use "../global/variables.scss" as var;
+
+.main-footer__logo-text {
+  @media (max-width: var.$mobile-width-only) {
+    display: none;
+  }
+}
