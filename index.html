@@ -9,35 +9,40 @@
 </head>
 
 <body class="page-body">
-  <header class="main-header">
+  <header class="main-header main-header--no-js">
     <div class="container">
-      <div class="main-header__top">
-        <span class="main-header__logo">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-            <img class="main-header__logo-img" width="52" height="52" src="img/logo-mobile.svg" alt="Логотип Ягоды.">
-          </picture>
-        </span>
-        <button class="main-header__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+      <div class="main-header__wrapper">
+        <div class="main-header__top">
+          <span class="main-header__logo">
+            <svg class="main-header__logo-icon" width="52" height="52">
+              <use xlink:href="img/icons/stack.svg#logo-berry"></use>
+            </svg>
+            <svg class="main-header__logo-text" width="67" height="50">
+              <use xlink:href="img/icons/stack.svg#logo-text"></use>
+            </svg>
+            <span class="visually-hidden">Логотип магазина "Ягода"</span>
+          </span>
+          <button class="main-header__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
+        <nav class="main-header__nav main-nav">
+          <ul class="main-nav__list">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Каталог</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Новости</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="#">Контакты</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Заказать</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <nav class="main-header__nav main-nav main-nav--no-js">
-        <ul class="main-nav__list">
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Каталог</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Новости</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="#">Контакты</a>
-          </li>
-          <li class="main-nav__item">
-            <a class="main-nav__link" href="form.html">Заказать</a>
-          </li>
-        </ul>
-      </nav>
     </div>
   </header>
   <main class="main-page">
@@ -247,16 +252,19 @@
   <footer class="main-footer">
     <div class="container">
       <span class="main-footer__logo">
-        <picture>
-          <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
-          <img class="main-footer__logo-img" width="52" height="52" src="img/logo-mobile.svg" alt="Логотип Ягоды.">
-        </picture>
+        <svg class="main-footer__logo-icon" width="52" height="52">
+          <use xlink:href="img/icons/stack.svg#logo-berry"></use>
+        </svg>
+        <svg class="main-footer__logo-text" width="67" height="50">
+          <use xlink:href="img/icons/stack.svg#logo-text"></use>
+        </svg>
+        <span class="visually-hidden">Логотип магазина "Ягода"</span>
       </span>
       <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20">
-              <use xlink:href="img/stack.svg#icon-telegram"></use>
+              <use xlink:href="img/icons/stack.svg#icon-telegram"></use>
             </svg>
             <span class="visually-hidden">Telegram</span>
           </a>
@@ -264,7 +272,7 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="16">
-              <use xlink:href="img/stack.svg#icon-vkontakte"></use>
+              <use xlink:href="img/icons/stack.svg#icon-vkontakte"></use>
             </svg>
             <span class="visually-hidden">ВКонтакте</span>
           </a>
@@ -272,7 +280,7 @@
         <li class="social__item">
           <a class="social__link" href="#">
             <svg class="social__icon" width="20" height="20">
-              <use xlink:href="img/stack.svg#icon-youtube"></use>
+              <use xlink:href="img/icons/stack.svg#icon-youtube"></use>
             </svg>
             <span class="visually-hidden">Youtube</span>
           </a>
@@ -282,7 +290,7 @@
         aria-label="Сайт HTML Academy.">
         <span class="main-footer__copyright-text">HTML Academy</span>
         <svg class="main-footer__copyright-img" role="img" aria-hidden="true" focusable="false" width="20" height="24">
-          <use xlink:href="img/stack.svg#logo-htmlacademy"></use>
+          <use xlink:href="img/icons/stack.svg#logo-htmlacademy"></use>
         </svg>
       </a>
     </div>
