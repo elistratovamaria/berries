@@ -1,0 +1,118 @@
+@use "../global/variables.scss" as var;
+
+.catalog {
+  padding: 64px 0 0 0;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 100px 0 0 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.catalog__title {
+  margin: 0 0 64px 0;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 72px 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0 0 92px 0;
+  }
+}
+
+.catalog__list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+  margin: 0 0 64px 0;
+  padding: 0 2px;
+  list-style: none;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 100px 0;
+    padding: 0 68px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 52px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 52px 24px;
+    padding: 0;
+  }
+}
+
+.catalog__item {
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 54px 0;
+  box-shadow: 0 4px 4px rgba(var.$hot-purple, 0.15);
+  border-radius: 40px;
+
+  &--hidden {
+    @media (max-width: var.$mobile-width-only) {
+      display: none;
+    }
+  }
+}
+
+.catalog__img {
+  display: block;
+  width: 100%;
+  margin: 0 0 28px 0;
+  border-radius: 40px 40px 0 0;
+}
+
+.catalog__item-title {
+  max-width: 250px;
+  margin: 0 auto 26px auto;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  color: var.$deep-sea;
+  transition: 0.3s ease-out;
+}
+
+.catalog__text {
+  display: flex;
+  max-width: 250px;
+  font-size: 18px;
+  line-height: 21px;
+  margin: 0 auto 38px auto;
+}
+
+.catalog__price {
+  display: block;
+  margin: 0 20px 0 0;
+}
+
+.catalog__weight {
+  display: block;
+}
+
+.catalog__button {
+  min-width: 220px;
+  width: calc(100% - 20px - 24px);
+  margin: auto 20px 0 24px;
+  padding: 14px 14px 15px 14px;
+}
+
+.catalog__link-text {
+  &:hover {
+    .catalog__item-title {
+      color: var.$lawn-green;
+    }
+  }
+
+  &:active {
+    .catalog__item-title {
+      color: rgba(var.$deep-sea, 0.5);
+    }
+  }
+}
