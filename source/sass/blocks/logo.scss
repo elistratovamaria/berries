@@ -1,0 +1,28 @@
+@use "../global/variables.scss" as var;
+
+.logo {
+  color: var.$deep-sea;
+  transition: 0.3s ease-out;
+
+  &[href]:hover {
+    color: var.$lawn-green;
+  }
+
+  &[href]:active {
+    color: rgba(var.$deep-sea, 0.5);
+  }
+}
+
+.logo__text {
+  @media (max-width: var.$mobile-width-only) {
+    display: none;
+  }
+}
+
+.logo__icon {
+  @media (min-width: var.$tablet-width) {
+    width: 58px;
+    height: 60px;
+    margin: 0 5px 0 0;
+  }
+}

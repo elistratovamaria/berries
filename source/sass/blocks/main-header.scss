@@ -127,30 +127,3 @@
     mask-size: 28px 28px;
   }
 }
-
-.main-header__logo-text {
-  @media (max-width: var.$mobile-width-only) {
-    display: none;
-  }
-}
-
-.main-header__logo-icon {
-  @media (min-width: var.$tablet-width) {
-    width: 58px;
-    height: 60px;
-    margin: 0 5px 0 0;
-  }
-}
-
-.main-header__logo {
-  color: var.$deep-sea;
-  transition: 0.3s ease-out;
-
-  &[href]:hover {
-    color: var.$lawn-green;
-  }
-
-  &[href]:active {
-    color: rgba(var.$deep-sea, 0.5);
-  }
-}
