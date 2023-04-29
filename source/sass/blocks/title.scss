@@ -1,0 +1,21 @@
+@use "../global/variables.scss" as var;
+
+.title {
+  margin: 0;
+  font-family: var.$secondary-font;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  text-align: center;
+  color: var.$deep-sea;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    font-size: 52px;
+    line-height: 58px;
+  }
+}

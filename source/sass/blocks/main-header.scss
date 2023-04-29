@@ -141,3 +141,16 @@
     margin: 0 5px 0 0;
   }
 }
+
+.main-header__logo {
+  color: var.$deep-sea;
+  transition: 0.3s ease-out;
+
+  &[href]:hover {
+    color: var.$lawn-green;
+  }
+
+  &[href]:active {
+    color: rgba(var.$deep-sea, 0.5);
+  }
+}
