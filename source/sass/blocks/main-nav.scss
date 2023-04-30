@@ -34,10 +34,10 @@
   transition: 0.3s ease;
 
   &:hover {
-    opacity: 0.6;
+    color: var.$lawn-green;
   }
 
   &:active {
-    opacity: 0.3;
+    color: var.$deep-sea;
   }
 }

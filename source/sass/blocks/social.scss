@@ -1,0 +1,50 @@
+@use "../global/variables.scss" as var;
+
+.social {
+  display: grid;
+  grid-template-columns: repeat(3, 32px);
+  gap: 10px 20px;
+  margin: -4px 0 0 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: var.$tablet-width) {
+    grid-template-columns: repeat(3, 40px);
+    gap: 16px 32px;
+    margin: 0 0 0 45px;
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  color: var.$deep-sea;
+  border-radius: 50%;
+  border: 1px solid var.$deep-sea;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: var.$lawn-green;
+    border-color: var.$lawn-green;
+  }
+
+  &:active {
+    color: rgba(var.$deep-sea, 0.5);
+    border-color: rgba(var.$deep-sea, 0.5);
+  }
+
+  @media (min-width: var.$tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.social__icon {
+  @media (min-width: var.$tablet-width) {
+    width: 24px;
+    height: 24px;
+  }
+}

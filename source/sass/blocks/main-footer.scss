@@ -1,7 +1,71 @@
 @use "../global/variables.scss" as var;
 
-.main-footer__logo-text {
-  @media (max-width: var.$mobile-width-only) {
-    display: none;
+.main-footer {
+  padding: 11px 0 20px 0;
+  background-color: var.$alice-blue-2;
+
+  @media (min-width: var.$tablet-width) {
+    padding: 22px 0;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    padding: 24px 0;
+  }
+}
+
+.main-footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-footer__copyright {
+  margin: 5px 0 0 auto;
+  display: flex;
+  align-items: center;
+  color: var.$black;
+  transition: 0.3s ease-out;
+
+  &:hover {
+    color: var.$lawn-green;
+  }
+
+  &:active {
+    color: var.$deep-sea;
+  }
+
+  @media (min-width: var.$additional-width) {
+    margin: 0 0 0 5px;
+  }
+}
+
+.main-footer__copyright-text {
+  margin: 0 8px 0 0;
+  font-size: 11px;
+  line-height: 13px;
+
+  @media (min-width: var.$tablet-width) {
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.main-footer__logo {
+  display: block;
+
+  @media (min-width: var.$tablet-width) {
+    margin: 0 0 0 -5px;
+  }
+
+  @media (min-width: var.$desktop-width) {
+    margin: 0;
+  }
+}
+
+.main-footer__copyright-img {
+  @media (min-width: var.$tablet-width) {
+    width: 26px;
+    height: 32px;
   }
 }
