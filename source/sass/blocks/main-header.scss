@@ -32,8 +32,10 @@
   }
 
   @media (min-width: var.$tablet-width) {
+    position: relative;
     padding: 21px 0 19px 0;
     box-shadow: 0 4px 4px rgba(var.$hot-purple, 0.25);
+    z-index: 2;
   }
 
   @media (min-width: var.$desktop-width) {
@@ -57,12 +59,14 @@
 }
 
 .main-header__top {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 -26px;
   padding: 4px 21px 4px 26px;
   box-shadow: 0 4px 4px rgba(var.$hot-purple, 0.25);
+  z-index: 2;
 
   @media (min-width: var.$tablet-width) {
     margin: 0;
