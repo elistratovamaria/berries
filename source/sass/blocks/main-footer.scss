@@ -20,8 +20,18 @@
   justify-content: space-between;
 }
 
+.main-footer__wrapper-copyright {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+
+  @media (min-width: var.$tablet-width) {
+    width: unset;
+  }
+}
+
 .main-footer__copyright {
-  margin: 5px 0 0 auto;
+  margin: 5px 0 0 0;
   display: flex;
   align-items: center;
   color: var.$black;
@@ -33,10 +43,6 @@
 
   &:active {
     color: var.$deep-sea;
-  }
-
-  @media (min-width: var.$additional-width) {
-    margin: 0 0 0 5px;
   }
 }
 
