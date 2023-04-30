@@ -11,7 +11,7 @@
   @media (min-width: var.$tablet-width) {
     grid-template-columns: repeat(3, 40px);
     gap: 16px 32px;
-    margin: 0 0 0 45px;
+    margin: 0 0 0 40px;
   }
 }
 
@@ -27,6 +27,12 @@
   transition: 0.3s ease-out;
 
   &:hover {
+    color: var.$lawn-green;
+    border-color: var.$lawn-green;
+  }
+
+  &:focus {
+    outline: none;
     color: var.$lawn-green;
     border-color: var.$lawn-green;
   }

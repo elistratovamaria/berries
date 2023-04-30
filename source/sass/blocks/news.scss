@@ -196,3 +196,9 @@
     }
   }
 }
+
+.news__break-title {
+  @media (min-width: var.$desktop-width) {
+    display: none;
+  }
+}

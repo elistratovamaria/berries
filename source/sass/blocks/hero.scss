@@ -6,6 +6,7 @@
   background-image: url("../../img/hero-bg-mobile@1x.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: var.$alice-blue-2;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/hero-bg-mobile@2x.jpg");

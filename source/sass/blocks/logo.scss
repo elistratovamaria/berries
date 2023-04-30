@@ -8,6 +8,11 @@
     color: var.$lawn-green;
   }
 
+  &[href]:focus {
+    outline: none;
+    color: var.$lawn-green;
+  }
+
   &[href]:active {
     color: rgba(var.$deep-sea, 0.5);
   }

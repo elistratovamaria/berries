@@ -17,6 +17,10 @@
     background-color: var.$dark-orchid;
   }
 
+  &:focus {
+    background-color: var.$dark-orchid;
+  }
+
   &:active {
     background-color: rgba(var.$purple, 0.6);
   }

@@ -37,14 +37,20 @@
     color: var.$lawn-green;
   }
 
+  &:focus {
+    outline: none;
+    color: var.$lawn-green;
+  }
+
   &:active {
     color: var.$deep-sea;
   }
 
   &--active {
+    pointer-events: none;
+
     @media (min-width: var.$desktop-width) {
       color: var.$deep-sea;
-      pointer-events: none;
     }
   }
 }

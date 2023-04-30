@@ -336,6 +336,7 @@
 
     @media (min-width: var.$desktop-width) {
       display: flex;
+      flex-wrap: wrap;
       gap: 48px;
       margin: 0;
     }
@@ -460,6 +461,10 @@
   background-color: var.$lawn-green;
 }
 
+.form__control-input--radio:focus:checked + .form__control-mark::before {
+  background-color: var.$lawn-green;
+}
+
 .form__control-input--checkbox:checked + .form__control-mark::before {
   content: "";
   position: absolute;
@@ -473,6 +478,10 @@
 }
 
 .form__control-input--checkbox:hover:checked + .form__control-mark::before {
+  background-color: var.$lawn-green;
+}
+
+.form__control-input--checkbox:focus:checked + .form__control-mark::before {
   background-color: var.$lawn-green;
 }
 
