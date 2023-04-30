@@ -1,0 +1,35 @@
+@use "../global/variables.scss" as var;
+
+.input {
+  padding: 16px 12px 14px 12px;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 20px;
+  border: 1px solid var.$deep-sea;
+  color: var.$black;
+  background-color: var.$transparent;
+  border-radius: 20px;
+  transition: 0.3s ease-out;
+
+  &::placeholder {
+    color: rgba(var.$edward, 0.7);
+  }
+
+  &:hover {
+    border-color: var.$lawn-green;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var.$lawn-green;
+  }
+
+  &:active {
+    border-color: var.$lawn-green;
+  }
+
+  &:disabled {
+    border-color: rgba(var.$edward, 0.7);
+    pointer-events: none;
+  }
+}

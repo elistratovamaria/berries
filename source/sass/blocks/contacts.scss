@@ -21,6 +21,10 @@
     }
   }
 
+  &--form {
+    padding: 95px 0 0 0;
+  }
+
   @media (min-width: var.$tablet-width) {
     padding: 114px 0 0 0;
   }

@@ -40,4 +40,11 @@
   &:active {
     color: var.$deep-sea;
   }
+
+  &--active {
+    @media (min-width: var.$desktop-width) {
+      color: var.$deep-sea;
+      pointer-events: none;
+    }
+  }
 }
