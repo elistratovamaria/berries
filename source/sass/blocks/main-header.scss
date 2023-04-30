@@ -5,12 +5,20 @@
   background-color: var.$alice-blue-2;
 
   &--no-js {
+    .main-header__wrapper {
+      margin: 0 -26px;
+    }
+
+    .main-header__top {
+      margin: 0;
+      padding: 0 26px;
+    }
+
     .main-header__nav {
       @media (max-width: var.$mobile-width-only) {
         position: static;
         display: block;
         width: 100%;
-        margin: 0;
         opacity: 1;
         transform: translateX(0);
       }

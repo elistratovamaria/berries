@@ -9,10 +9,4 @@
   @media (min-width: var.$desktop-width) {
     padding: 0;
   }
-
-  &--flex {
-    @media (min-width: var.$tablet-width) {
-      display: flex;
-    }
-  }
 }
