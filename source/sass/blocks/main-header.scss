@@ -81,7 +81,7 @@
     transform: translateX(-100%);
     transition: 0.3s ease-out;
     background-color: var.$alice-blue-2;
-    box-shadow: inset 0 4px 4px rgba(var.$hot-purple, 0.25);
+    box-shadow: inset 0 6px 6px -4px rgba(var.$hot-purple, 0.25);
     z-index: 2;
   }
 
